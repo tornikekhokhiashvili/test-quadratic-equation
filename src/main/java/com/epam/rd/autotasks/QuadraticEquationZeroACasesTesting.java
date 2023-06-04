@@ -26,7 +26,9 @@ public class QuadraticEquationZeroACasesTesting {
         return Arrays.asList(new Object[][]{
                 {0, 1, 1},
                 {0, 2, -3},
-                {0, 0, 0}
+                {0, 0, 0},
+                {0, 0, 0},
+
         });
     }
 

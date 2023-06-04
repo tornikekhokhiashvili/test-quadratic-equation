@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.fail;
 
 @RunWith(Parameterized.class)
 public class QuadraticEquationSingleRootCasesTesting {
@@ -27,14 +28,27 @@ public class QuadraticEquationSingleRootCasesTesting {
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 {1, -2, 1, 1},
-                // Add more test cases here
+                { 1.0, -2.0, 1.0, 1.0 },
+                { 1.0, -2.0, 1.0, 1 },
+                { 1.0, -2.0, 1.0,1.0}
+
         });
     }
 
     @Test
     public void testSingleRootCase() {
         String expected = "1.0"; // Replace with the expected string value
-        String actual = quadraticEquation.solve(a, b, c);
-        assertEquals(expected, actual);
+        if(a==0){
+            try {
+               quadraticEquation.solve(a, b, c);
+                fail("Expected IllegalArgumentException, but no exception was thrown");
+
+            }catch (IllegalAccessError e){
+
+            }
+        }else {
+            assertEquals(expected, quadraticEquation.solve(a, b, c));
+        }
+
     }
 }

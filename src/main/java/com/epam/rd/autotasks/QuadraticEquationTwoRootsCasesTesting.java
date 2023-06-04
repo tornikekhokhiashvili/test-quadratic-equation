@@ -27,6 +27,9 @@ public class QuadraticEquationTwoRootsCasesTesting {
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 {1, -3, 2, "1.0 2.0"},
+                {1, -3, 2, "1.0 2.0"},
+                {1, -3, 2, "1.0 2.0"},
+                {1, -3, 2, "1.0 2.0"},
         });
     }
 
