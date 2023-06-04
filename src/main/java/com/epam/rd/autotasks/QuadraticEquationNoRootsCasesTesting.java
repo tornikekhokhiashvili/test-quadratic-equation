@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class QuadraticEquationNoRootsCasesTesting {
 
-    private QuadraticEquation quadraticEquation = new QuadraticEquation();
+    public QuadraticEquation quadraticEquation = new QuadraticEquation();
 
     private double a;
     private double b;
@@ -23,6 +23,7 @@ public class QuadraticEquationNoRootsCasesTesting {
         this.b = b;
         this.c = c;
     }
+
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {

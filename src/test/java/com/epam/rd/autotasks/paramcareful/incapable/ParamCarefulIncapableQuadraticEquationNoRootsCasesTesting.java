@@ -12,3 +12,4 @@ public class ParamCarefulIncapableQuadraticEquationNoRootsCasesTesting extends Q
         quadraticEquation = new ParamCarefulIncapableQuadraticEquation();
     }
 }
+

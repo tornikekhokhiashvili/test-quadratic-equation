@@ -6,7 +6,7 @@ import static java.lang.Math.sqrt;
 
 class ParamCarefulTwoRootsReversedOrderQuadraticEquation extends QuadraticEquation {
     @Override
-    public double solve(final double a, final double b, final double c) {
+    public String solve(final double a, final double b, final double c) {
         if (a == 0) {
             throw new IllegalArgumentException();
         }

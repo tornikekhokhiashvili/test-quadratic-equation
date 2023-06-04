@@ -4,7 +4,7 @@ import com.epam.rd.autotasks.QuadraticEquation;
 
 class ParamCarefulIncapableQuadraticEquation extends QuadraticEquation {
     @Override
-    public double solve(final double a, final double b, final double c) {
+    public String solve(final double a, final double b, final double c) {
         if (a == 0)
             throw new IllegalArgumentException();
         return "no roots";
