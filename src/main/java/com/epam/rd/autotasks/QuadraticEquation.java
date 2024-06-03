@@ -5,9 +5,7 @@ public class QuadraticEquation {
         if (a == 0) {
             throw new IllegalArgumentException("Coefficient 'a' cannot be zero");
         }
-
         double discriminant = b * b - 4 * a * c;
-
         if (discriminant > 0) {
             double x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
             double x2 = (-b - Math.sqrt(discriminant)) / (2 * a);

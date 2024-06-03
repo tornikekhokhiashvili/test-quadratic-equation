@@ -1,14 +1,9 @@
 package com.epam.rd.autotasks;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.util.Arrays;
 import java.util.Collection;
-
-import static org.junit.Assert.*;
-
 
 @RunWith(Parameterized.class)
 public class QuadraticEquationZeroACasesTesting {
@@ -27,15 +22,11 @@ public class QuadraticEquationZeroACasesTesting {
                 {0, 1, 1},
                 {0, 2, -3},
                 {0, 0, 0},
-                {0, 0, 0},
-
+                {0, -7, 12},
         });
     }
-
     @Test(expected = IllegalArgumentException.class)
     public void testZeroACase() {
         quadraticEquation.solve(a, b, c);
     }
-
-
 }
